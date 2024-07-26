@@ -4,10 +4,14 @@
     background-color: #ecf0fc
   }
 
+
 .home-page h2 {
-    font-size: 24px;
-    font-weight: bold;
+    margin: 0 0 10px;
     color: #000000;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
   }
 
   .home-page h2 span {
