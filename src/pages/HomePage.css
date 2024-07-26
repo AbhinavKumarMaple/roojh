@@ -1,0 +1,46 @@
+.home-page {
+    padding: 20px;
+    font-family: Arial, sans-serif; 
+    background-color: #ecf0fc
+  }
+
+.home-page h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+  }
+
+  .home-page h2 span {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    color: #e83d43;
+  }
+
+.card-container {
+    padding: 20px;
+    background-color: white;
+  }
+
+  .card-container text{
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+ .home-page img {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 100px;
+  }
+
+  .home-page .location-text {
+    color:#243e89;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px;
+    padding-inline: 0px;
+    display: flex;
+    align-items: center;
+    gap:5px;
+  }

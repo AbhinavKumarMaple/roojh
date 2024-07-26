@@ -1,0 +1,29 @@
+.search-bar-container {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 8px;
+  border:1px solid #e0e0e0;
+  padding: 5px 10px;
+}
+
+.search-bar-container .lable {
+  margin-right: 10px;
+    font-size: 1em;
+    color:#333333;
+}
+.search-bar-container input {
+ flex:1;
+ border:none;
+ background-color: transparent;
+font-size: 1em;
+padding: 10px;
+border-radius: 8px;
+outline: none;
+}
+
+.search-bar-container .search-icon {
+    margin-left: 10px;
+    font-size:1.2em;
+    color:#333333;
+}

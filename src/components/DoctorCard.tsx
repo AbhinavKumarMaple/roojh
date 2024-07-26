@@ -7,6 +7,7 @@ const  DoctorCard=({doctor}:any)=> {
     //   };
   return (
     <div className="card">
+      <div className='details'>
       <img src={doctor.profileImage || "https://www.w3schools.com/howto/img_avatar.png"} alt={doctor.name} className="image" />
       <div className="info">
         <h3 className="name">{doctor.name}</h3>
@@ -17,8 +18,9 @@ const  DoctorCard=({doctor}:any)=> {
           <span className="icon">&#x1F4CD;</span>
           {doctor.clinic.name}, {doctor.clinic.address}
         </p>
-        <Link to={`/doctor/${"6698d3dad9f56a46bdf35753"}`} state={{ doctorId: "6698d3dad9f56a46bdf35753" , doctor:doctor}} className="button">Book Appointment</Link>
       </div>
+      </div>
+        <Link to={`/doctor/${"6698d3dad9f56a46bdf35753"}`} state={{ doctorId: "6698d3dad9f56a46bdf35753" , doctor:doctor}} className="button">Book Appointment</Link>
     </div>
   )
 }

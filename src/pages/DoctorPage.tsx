@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import './DoctorPage.css';
+import Logo from '../assets/Logo.png';
+import {FaChevronRight} from "react-icons/fa6"
+import {FaPhone} from "react-icons/fa6"
 
 interface Slot {
   start: string;
@@ -98,15 +101,14 @@ function DoctorPage() {
 
   return (
     <div className="doctor-page">
-      <header className="header">
-        <h1>
-          Roo<span>jh</span>
-        </h1>
-      </header>
+      <img className="header-logo" src={Logo}/>
       <section className="doctor-info">
         <h2>
-          Booking Appointment for <span className='orange-text'>{doctor.name}</span>
+          Booking Appointment for<span className='orange-text'>{'Ashwini Hingolikar'}</span><FaChevronRight color='#E83D44'/>
         </h2>
+        <p>Doctor: <span>{doctor.name}
+          </span>
+        </p>
         <p>Fees: ₹{doctor.fees.online}</p>
         <p>Location: Hill Road, Nagpur-440012</p>
         <div className="separator" />
@@ -128,6 +130,7 @@ function DoctorPage() {
         >
           <div className="date">Today</div>
           <div className="slots-available">
+            
             {selectedDate === today && availableSlots.length > 0
               ? `${availableSlots.length} Slots available`
               : 'No Slots available'}
@@ -159,7 +162,7 @@ function DoctorPage() {
       </section>
       <section className="contact-info">
         <p>Hospital Contact Number:</p>
-        <p><a href={`tel:${doctor.clinic.phoneNo}`}>{doctor.clinic.phoneNo}</a></p>
+        <p className='phone-info'><FaPhone className='phone-icon'/><a href={`tel:${doctor.clinic.phoneNo}`}>{doctor.clinic.phoneNo}</a></p>
       </section>
     </div>
   );

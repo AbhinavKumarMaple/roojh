@@ -33,4 +33,8 @@ export interface Slot {
     clinic: Clinic;
     fees: Fees;
   }
+
+  export interface onSearch {
+    onSearch: (query: string) => void;
+  }
   
