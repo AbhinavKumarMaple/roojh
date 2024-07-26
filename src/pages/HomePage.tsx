@@ -4,11 +4,9 @@ import DoctorCard from "../components/DoctorCard";
 
 function HomePage() {
 
-  const [doctors, setDoctors] = useState([    {
-    name:"something",
-    doctorDepartment:"something....",
-    totalExperience:"something....",
-  }])
+  const [doctors, setDoctors] = useState([    
+])
+  const [filteredDoctors, setFilteredDoctors] = useState([])
   const enterpriseId = '6643187506241f0cc1512b30';
   const facilityId = '66504ce706ea3b0a5063e3be'; 
   
@@ -16,15 +14,21 @@ function HomePage() {
 
 
 
-  // useEffect(()=>{
-  //   const fetchData = async () =>{
-  //     const doctors = await fetchDcotrs(enterpriseId,facilityId)
-  //     console.log(doctors)
-  //     setDoctors(doctors)
-  //   }
-  //   fetchData()
-  // },[])
+  useEffect(()=>{
+    const fetchData = async () =>{
+      const doctors = await fetchDcotrs(enterpriseId,facilityId)
+      console.log(doctors)
+      setDoctors(doctors)
+    }
+    fetchData()
+  },[])
 
+const handleSearch = (query:string) =>{
+  setFilteredDoctors(doctors.filter((doctor:any)=>doctor.name.toLowerCase().includes(query.toLowerCase())))
+}
+
+
+  
   return (
     <div>
       <div>testing</div>

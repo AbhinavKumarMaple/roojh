@@ -1,0 +1,148 @@
+.doctor-page {
+  padding: 20px;
+  font-family: Arial, sans-serif; 
+  background-color: #ecf0fc
+}
+
+.header {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #e83d43;
+}
+.header h1 span{
+  font-size: 24px;
+  font-weight: bold;
+  color: #000000;
+}
+
+
+.doctor-info {
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #e0e0e0;
+}
+.doctor-info p {
+  margin: 5px 0;
+}
+
+.doctor-info .doctor-name {
+  color: #000000;
+  font-weight: bold;
+}
+
+
+.doctor-info h2 {
+  margin: 0 0 10px;
+  color: #000000;
+}
+
+.doctor-info .orange-text {
+  color: #E83D44; 
+}
+
+.doctor-info p {
+  margin: 5px 0;
+}
+
+
+.date-selector {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1px;
+}
+
+.date-selector button {
+  background-color: white;
+  border: 0px solid #e0e0e0;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  flex: 1;
+  margin: 0 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.date-selector button.selected,
+.date-selector button:hover {
+  background-color: #243e89;
+  color: white;
+}
+
+.date-selector .date {
+  font-weight: bold;
+}
+
+.date-selector .slots-available {
+  font-size: 12px;
+  color: #888;
+}
+
+.slots {
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+.slot-available button {
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.slots button {
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.slots button.selected,
+.slots button:hover {
+  background-color: #243e89;
+  color: white;
+}
+
+.contact-info {
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+
+.contact-info p {
+  margin: 5px 0;
+  color: #000000;
+  font-weight: bold;
+}
+
+.contact-info a {
+  color: #243e89;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.separator {
+  border-top: 3px solid rgb(179, 179, 179); 
+  margin: 10px 0;
+}
