@@ -1,10 +1,9 @@
 import { Link } from 'react-router-dom';
+
 import './DoctorCard.css';
+import { FaLocationDot } from 'react-icons/fa6';
 const  DoctorCard=({doctor}:any)=> {
 
-    // const handleAppointmentClick = () => {
-    //     navigate(`/doctor/${doctor.name}`, { state: { doctorId: doctor.name } });
-    //   };
   return (
     <div className="card">
       <div className='details'>
@@ -15,7 +14,7 @@ const  DoctorCard=({doctor}:any)=> {
         <p className="detail">{doctor.doctorDepartment}</p>
         <p className="detail">Fees: ₹{doctor.fees["online"]}</p>
         <p className="address">
-          <span className="icon">&#x1F4CD;</span>
+        <FaLocationDot/>
           {doctor.clinic.name}, {doctor.clinic.address}
         </p>
       </div>
