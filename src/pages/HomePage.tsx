@@ -17,7 +17,7 @@ function HomePage() {
   useEffect(()=>{
     const fetchData = async () =>{
       const doctors = await fetchDcotrs(enterpriseId,facilityId)
-      console.log(doctors)
+      console.log("doctors",doctors)
       setDoctors(doctors)
       setFilteredDoctors(doctors)
     }

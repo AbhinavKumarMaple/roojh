@@ -110,7 +110,7 @@
   flex-wrap: wrap;
   gap: 10px;
   margin-bottom: 20px;
-  justify-content: center;
+  justify-content: start;
 }
 .slot-available button {
   background-color: white;
@@ -125,11 +125,14 @@
 .slots button {
   background-color: white;
   border: 1px solid #e0e0e0;
-  padding: 10px 20px;
-  border-radius: 5px;
+  padding: 10px 10px;
+  border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
-  min-width: 170px;
+  min-width: 135px;
+  font-size: 12px;
+  color: #6f5f5f;
+
 }
 
 .slots button.selected,

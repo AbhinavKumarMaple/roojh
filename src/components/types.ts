@@ -37,4 +37,25 @@ export interface Slot {
   export interface onSearch {
     onSearch: (query: string) => void;
   }
+
+  export interface Client {
+    _id:string;
+    address:string;
+    name:string;
+    phoneNo:string;
+  }
+
+  export interface Fees {
+    online:number;
+    'In-Hospital':number;
+  }
+
+  export interface Doctor{
+    name:string;
+    profileImage:string;
+    totalExperience:string;
+    doctorDepartment:string;
+    clinic:Client;
+    fees:Fees;
+  }
   

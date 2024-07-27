@@ -4,41 +4,8 @@ import './DoctorPage.css';
 import Logo from '../assets/Logo.png';
 import {FaChevronRight} from "react-icons/fa6"
 import {FaPhone} from "react-icons/fa6"
+import { DoctorPageState, DoctorSchedule, Slot } from './types';
 
-interface Slot {
-  start: string;
-  end: string;
-}
-
-interface DoctorSchedule {
-  dayOfWeek: string;
-  dayOfWeekId: number;
-  doctorId: string;
-  slotDuration: number;
-  facilityId: string;
-  date: string;
-  totalSlots: Slot[];
-}
-
-interface DoctorPageState {
-  doctor: {
-    name: string;
-    profileImage: string;
-    totalExperience: string;
-    doctorDepartment: string;
-    clinic: {
-      _id: string;
-      address: string;
-      name: string;
-      phoneNo: string;
-    };
-    fees: {
-      online: number;
-      'In-Hospital': number;
-    };
-  };
-  doctorId: string;
-}
 
 const formatTime = (time: string) => {
   const [hours, minutes] = time.split(':').map(Number);
